@@ -1,0 +1,23 @@
+import java.util.*;
+class Demo{
+    public static void main(String args[]){
+    int capacity = 1320;
+    Scanner input = new Scanner(System.in);
+    System.out.print("How many person a there? ");
+    int count = input.nextInt();
+    int weight = 0;
+    int total = 0;
+    for (int i = 0; i < count; i++)
+	{
+		System.out.print("Enter Weight of a "+(i+1)+" person (Kg) ? ");
+		weight = input.nextInt();
+		total += weight; 
+	}
+    if (total>capacity)
+	{
+		 System.out.print("Sorry! Elevator weight capacity is "+total+"..Please maintain the the suitable capacity.We are 1320Kg is recommende");
+	}else{ System.out.print(total+" Kg"+" is Satisfactory..Elevator weight capacity is good.");}
+    
+    
+    }
+}

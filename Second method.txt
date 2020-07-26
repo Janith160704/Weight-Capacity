@@ -1,0 +1,19 @@
+import java.util.*;
+class Ex4{
+    public static void main(String args[]){
+    int capacity = 1320;
+    Scanner input = new Scanner(System.in);
+    System.out.print("Enter Weight of a person (Kg) ? ");
+    int weight = input.nextInt();
+    System.out.print("How many person a there? ");
+    int count = input.nextInt();
+   
+    
+    if (weight*count>capacity)
+	{
+		 System.out.print("Sorry! Elevator weight capacity over load..Please maintain the the suitable capacity.");
+	}else{ System.out.print("Satisfactory..Elevator weight capacity is good.");}
+    
+    
+    }
+}
